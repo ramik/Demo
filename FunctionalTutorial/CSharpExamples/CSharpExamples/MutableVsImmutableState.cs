@@ -1,4 +1,6 @@
-﻿namespace CSharpExamples
+﻿using System;
+
+namespace CSharpExamples
 {
     public class MutableVsImmutableState
     {
@@ -10,6 +12,11 @@
                 result *= i;
             }
             return result;
+        }
+
+        public static int CalculateFuncFactorial(int i)
+        {
+            return i == 0 ? 1 : i * CalculateFactorial(i - 1);
         }
     }
 }
