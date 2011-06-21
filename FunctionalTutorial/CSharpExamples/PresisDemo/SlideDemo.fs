@@ -23,3 +23,4 @@ let pimpTheList = topics |> Seq.sortBy (fun (prio,_,_) -> prio)
                          |> Seq.map (fun x -> (formatTopic (fst x) (snd x)))
 
 let printPimped x = x |> Seq.iter (fun c -> printfn "%s" c)
+

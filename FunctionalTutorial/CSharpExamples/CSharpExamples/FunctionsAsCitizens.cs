@@ -6,8 +6,7 @@ namespace CSharpExamples
     {
         Combine,
         Lambda,
-        StringCombine
-    }
+   }
 
     public class FunctionsAsCitizens
     {
@@ -21,8 +20,6 @@ namespace CSharpExamples
                     return Combine;
                 case FunctionType.Lambda:
                     return (a, b) => a*b;
-                case FunctionType.StringCombine:
-                    throw new NotImplementedException("not implemented");
                 default:
                     throw new ArgumentOutOfRangeException("type");
             }

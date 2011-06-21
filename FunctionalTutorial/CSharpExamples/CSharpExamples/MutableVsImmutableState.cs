@@ -16,7 +16,7 @@ namespace CSharpExamples
 
         public static int CalculateFuncFactorial(int i)
         {
-            return i == 0 ? 1 : i * CalculateFactorial(i - 1);
+            return i == 0 ? 1 : i * CalculateFuncFactorial(i - 1);
         }
     }
 }
